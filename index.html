@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>parkjp</title>
+<style>
+  :root {
+    --bg: #fff7e4;
+    --card: #fffdf7;
+    --text: #3b2a1a;
+    --muted: #7a6450;
+    --line: #ecdcbc;
+    --accent: #c0562f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1f1812;
+      --card: #2a211a;
+      --text: #f3e6d2;
+      --muted: #bba78f;
+      --line: #4a3b2d;
+      --accent: #f08a5d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1rem; color: var(--muted); font-weight: 600; margin: 0 0 12px; }
+  .app {
+    display: flex; gap: 16px; align-items: center;
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px;
+  }
+  .app img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
+  .app h3 { margin: 0; font-size: 1.1rem; }
+  .app p { margin: 2px 0 6px; color: var(--muted); font-size: .93rem; }
+  .app a { color: var(--accent); font-size: .93rem; margin-right: 12px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: .93rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>parkjp</h1>
+  <p class="sub">모바일 게임을 만듭니다 · Mobile games</p>
+
+  <h2>앱 · Apps</h2>
+  <div class="app">
+    <img src="fruitful/icon.png" alt="Fruitful 아이콘">
+    <div>
+      <h3>주렁주렁 과일가게 · Fruitful</h3>
+      <p>과일 매치3 퍼즐과 과일가게 운영 · Fruit match-3 puzzle and shop</p>
+      <a href="fruitful/privacy.html#ko">개인정보처리방침</a><a href="fruitful/privacy.html#en">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>문의 · Contact: <a href="mailto:fruitfulpuzzle@gmail.com">fruitfulpuzzle@gmail.com</a></footer>
+</main>
+</body>
+</html>
